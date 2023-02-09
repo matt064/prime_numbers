@@ -17,8 +17,9 @@ def test_variable_is_integer():
         pass
 
 
-# def test_number_divided_by_2():
-#     assert number % 2 == 0, "number is odd"
+def test_number_divided_by_2():
+    lista = prime_factors(8)
+    assert lista == [2, 2, 2]
 
 
 def test_list_is_not_empty():
@@ -27,15 +28,15 @@ def test_list_is_not_empty():
 
 
 def test_primary_digit():
-    primary = prime_factors(11)
-    assert primary == [11], "liczba nie jest liczba pierwsza"
+    primary = prime_factors(97)
+    assert primary == [97], "liczba nie jest liczba pierwsza"
 
 
 
 
 if __name__ == '__main__':
     for test in (
-        test_import_prime_factors, test_variable_is_integer, test_list_is_not_empty, test_primary_digit
+        test_import_prime_factors, test_variable_is_integer,test_number_divided_by_2, test_list_is_not_empty, test_primary_digit
     ):
         print(f'{test.__name__}: ', end=' ')
         try:
