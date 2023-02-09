@@ -14,10 +14,17 @@ def test_variable_is_integer():
         raise ValueError('variable is not an integer')
 
 
+def test_number_divided_by_2():
+    assert number % 2 == 0, "number is odd"
+
+
+
+
+
 
 if __name__ == '__main__':
     for test in (
-        test_import_prime_factors, test_variable_is_integer, 
+        test_import_prime_factors, test_variable_is_integer, test_number_divided_by_2,
     ):
         print(f'{test.__name__}: ', end=' ')
         try:

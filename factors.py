@@ -1,5 +1,12 @@
 
-number = 3958159172
+
+number = 3958159171
 
 def prime_factors(number):
-    pass
+    while number % 2 == 0:
+        number /= 2
+
+    
+
+
+
